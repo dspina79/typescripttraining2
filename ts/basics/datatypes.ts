@@ -17,3 +17,10 @@ const PI: number = 3.14159;
 // enumerations
 enum Sizes {Small, Medium, Large};
 let myHeight = Sizes.Large;
+
+// casting
+let personName;
+personName = "John";
+// casting using <> notation
+const isJohn = (<string>personName).toLowerCase() === "john";
+console.log(isJohn);

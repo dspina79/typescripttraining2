@@ -18,3 +18,9 @@ var Sizes;
 })(Sizes || (Sizes = {}));
 ;
 var myHeight = Sizes.Large;
+// casting
+var personName;
+personName = "John";
+// casting using <> notation
+var isJohn = personName.toLowerCase() === "john";
+console.log(isJohn);
