@@ -31,4 +31,11 @@ class Rectangle {
     set Width(value) {
         this.w = value;
     }
+
+    toString() {
+        return `The area is ${this.getArea()} and a perimeter equals ${this.getPerimeter()}.`
+    }
 }
+
+let rect = new Rectangle(7, 4);
+console.log(rect.toString()); // outputs "The area is 28 and a perimeter equals 22."

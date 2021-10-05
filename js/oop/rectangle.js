@@ -30,5 +30,10 @@ var Rectangle = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
+    Rectangle.prototype.toString = function () {
+        return "The area is " + this.getArea() + " and a perimeter equals " + this.getPerimeter() + ".";
+    };
     return Rectangle;
 }());
+var rect = new Rectangle(7, 4);
+console.log(rect.toString());
