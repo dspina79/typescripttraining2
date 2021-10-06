@@ -15,6 +15,9 @@ var Rectangle = /** @class */ (function () {
             return this.h;
         },
         set: function (value) {
+            if (value <= 0) {
+                throw new Error('Cannot handle impossible values for dimensions.');
+            }
             this.h = value;
         },
         enumerable: false,
@@ -25,6 +28,9 @@ var Rectangle = /** @class */ (function () {
             return this.w;
         },
         set: function (value) {
+            if (value <= 0) {
+                throw new Error('Cannot handle impossible values for dimensions.');
+            }
             this.w = value;
         },
         enumerable: false,
@@ -36,4 +42,4 @@ var Rectangle = /** @class */ (function () {
     return Rectangle;
 }());
 var rect = new Rectangle(7, 4);
-console.log(rect.toString());
+console.log(rect.toString()); // outputs "The area is 28 and a perimeter equals 22."

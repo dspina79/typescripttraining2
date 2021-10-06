@@ -21,6 +21,9 @@ class Rectangle {
     }
 
     set Height(value) {
+        if (value <= 0) {
+            throw new Error('Cannot handle impossible values for dimensions.');
+        }
         this.h = value;
     }
 
@@ -29,6 +32,9 @@ class Rectangle {
     }
 
     set Width(value) {
+        if (value <= 0) {
+            throw new Error('Cannot handle impossible values for dimensions.');
+        }
         this.w = value;
     }
 
