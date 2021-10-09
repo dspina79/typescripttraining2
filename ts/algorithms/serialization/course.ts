@@ -32,4 +32,8 @@ export class Course {
     set Description(value: string) {
         this._description = value;
     }
+
+    toString() {
+        return this._courseName;
+    }
 }
